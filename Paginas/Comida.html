@@ -7,20 +7,26 @@
         <title>Pasillo 4 | Comida</title>
         <link rel="stylesheet" href="../estilos/estilos.css">
         <link rel="shortcut icon" href="../Imagenes/4.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     </head>
 <body>
 
     <header class="header"> <!-- Cabereca de la pag, con logo, menu, etc -->
         
-        <div>
-            <img src="../Imagenes/Logo-P4.png" alt="Logo de pasillo 4" class="iconDetails">
-            <h1 class="fuente-1 unbold slogan-tamaño slogan-alineacion mayusculas">Donde empieza la felicidad</h1>
+        <div class="fullnav" >
+            <img src="../Imagenes/Logo-P4.png" alt="Logo de pasillo 4" class="iconDetails header__grid1">
+            <h1 class="fuente-1 unbold slogan mayusculas header__grid2">Donde empieza la felicidad</h1>
+            <a href="#menu" class="nav__menu nav__menu--oculto header__grid3">
+                <span class="jam jam-menu"></span>
+            </a>
         </div>
-        <nav class="nav nav-pos">
-            <!-- Lista de enlaces para navegar dentro del sitio -->
-         
-
-            <ul class="nav__lista ">
+        
+        <nav class="nav" id="menu">
+            <!-- Lista de enlaces para navegar dentro del sitio -->            
+            <ul class="nav__lista">
                 <li class="nav__item">
                     <a href="../index.html" class="fuente-1">Inicio</a>
                 </li>
@@ -35,6 +41,9 @@
                 </li>
                 <li class="nav__item">
                     <a href="../Paginas/Contactanos.html" class="fuente-1">Contactanos</a>
+                </li>
+                <li class="nav__item nav__item--oculto">
+                    <a href="#cerrado" class="fuente-1">X</a>
                 </li>
             </ul>
         </nav>

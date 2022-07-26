@@ -6,11 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    text-decoration: none;
-    list-style: none;
-    /* background-color: #d9e476; */
-    color: rgb(63, 55, 44);
-
 }
 
 
@@ -21,12 +16,14 @@
 }
 
 .fuente-1{
+    text-decoration: none;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    background-color: transparent;
+    color: #9b7408;
+    
 }
 .fuente-2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: transparent;
+    color: hsl(45, 28%, 48%);
 }
 
 .title-font-size{
@@ -48,13 +45,11 @@
 
 /* MODIFICADORES DE SLOGAN */
 
-.slogan-tamaño{
+.slogan{
     font-size: 56px;
-}
-.slogan-alineacion{
     text-align: center;
+    color: yellow;
 }
-
 
 /* MODIFICADORES DE NAV */
 
@@ -67,6 +62,7 @@
 }
 
 .nav__lista {
+    list-style: none;
     display: flex;
 }
 
@@ -75,16 +71,26 @@
     margin-left: 16px;
     text-shadow: rgb(88, 87, 87) 2px 2px 8px;
     padding: 14px;
+    text-decoration: none;
 }
 
 .nav__item a:hover {
     color: rgb(168, 44, 44);
 }
 
-.nav-pos {
-    
-    
-    background-color: transparent;
+.nav__item--oculto{
+    display: none;
+}
+
+.nav__menu{
+    width: 16px;
+    height: 16px;
+    text-decoration: none;
+    color: yellow;
+}
+
+.nav__menu--oculto{
+    display: none;
 }
 
 .header{
@@ -92,15 +98,14 @@
     width: 100%;
     margin-bottom: 1px;
     z-index: 1000;
-    background-color: #d9e476;
+    background-color: black;
     /* background: rgb(246,255,27);
     background: linear-gradient(162deg, rgba(246,255,27,1) 0%, rgba(255,255,235,0.10407913165266103) 40%, rgba(246,255,27,1) 100%); */
 }
 
 .header-sep{
-    padding-top: 138px;
+    padding-top: 137px;
     min-height: 100vh;
-    /* background-color: #d9e476; */
     background: rgb(246,255,27);
     background: linear-gradient(162deg, rgba(246,255,27,1) 0%, rgba(255,255,235,0.10407913165266103) 40%, rgba(246,255,27,1) 100%);
 }
@@ -115,6 +120,12 @@
     position: absolute;
 }
 
+.title__ubicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ARRANCA EL MAIN*/
 
@@ -145,18 +156,10 @@
 
 .alineacion-img{
     float: right;
-    margin-left: 200px;
     display: flex;
     width: 50%;
     height: 80%;
 }
-/* .card__imagen{
-    width: 50%;
-    height: 50%; 
-    padding-right: 1px;
-    align-items: flex-start;
-    position: relative;
-} */
 
 .card__titulo {
     text-align: center;
@@ -225,7 +228,7 @@
 
 .grid__mapas{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "mapa1 mapa2"
     "mapa3 mapa4";
     grid-column-gap: 20px;
@@ -242,7 +245,7 @@
     border-radius: 4%;
     padding: 20px;
     margin: 20px;
-    
+
  }
  .grid__mapas--2 {
     grid-area: mapa2;
@@ -254,7 +257,7 @@
     border-radius: 4%;
     padding: 20px;
     margin: 20px;
-    
+
  }
  .grid__mapas--3 {
     grid-area: mapa3;
@@ -266,7 +269,7 @@
     border-radius: 4%;
     padding: 20px;
     margin: 20px;
-    
+
  }
  .grid__mapas--4 {
     grid-area: mapa4;
@@ -278,7 +281,7 @@
     border-radius: 4%;
     padding: 20px;
     margin: 20px;
-    
+
  }
 
 
@@ -286,56 +289,107 @@
 
 /* Movil */
 @media screen and (max-width: 420px) {
-    
+
     /*------NAV--------*/
-    .nav {
+
+    .fullnav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 150px;
+    }
+
+
+
+    .slogan{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 24px;
+        /* padding-bottom: 5rem; */
+        width: 40%;
+        padding: 24px;
+        text-align: left;
+    
+    }
+
+    .nav{
+        display: none;
+        background-color: #8ea71f;
         position: fixed;
-        width: 100%;
-        margin-bottom: 1px;
-        z-index: 1000;
-        background-color: #d9e476;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        width: 80%;
+        height: 100vh;
+        text-decoration: none;
+        border-right: #000 solid 2px;
     }
 
-    .nav__lista {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-     
-    .iconDetails{
-  
-        margin-left: 1%;
+    .nav:target{
         display: block;
-        width: 100px;
-        height: 100px;
-        margin-top: 1%;
-        position: absolute;
     }
 
-    .header {
+    .nav__lista{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    .nav__menu--oculto{
+        display: block;
+    }
+
+    .nav__item--oculto{
+        display: block;
+    }
+
+    .title__ubicacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*-----------INDEX------------*/
+
+    .header-sep{
+        padding-top: 103px;
+    }
+
+    .video{
+        width: 100%;
+        height: 300px;
+    }
+
+    .card{
+        width: 100%;
+        height: 300px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
     }
 
+    .card__titulo{
+        font-size: 24px;
+    }
 
+    .card__texto{
+
+    }
 
     /*----- MAPAS-----*/
-    
+
     .grid__mapas {
-        padding-top: 4rem;
         padding-bottom: 16rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 200px);
-        grid-template-areas: 
+        grid-template-areas:
         "mapa1"
         "mapa2"
         "mapa3"
@@ -359,10 +413,11 @@
         border: #000 solid;
         border-radius: 4%;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
         width: 400px;
         height: 400px;
-        
+ 
+
      }
      .grid__mapas--2 {
         grid-area: mapa2;
@@ -373,7 +428,7 @@
         border: #000 solid;
         border-radius: 4%;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
         width: 400px;
         height: 400px;
      }
@@ -386,9 +441,10 @@
         border: #000 solid;
         border-radius: 4%;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
         width: 400px;
         height: 400px;
+ 
      }
      .grid__mapas--4 {
         grid-area: mapa4;
@@ -399,9 +455,10 @@
         border: #000 solid;
         border-radius: 4%;
         padding: 20px;
-        margin: 20px;
+        margin: 10px;
         width: 400px;
         height: 400px;
+    
      }
 
      /*------FOOTER-------*/
