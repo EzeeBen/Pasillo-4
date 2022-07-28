@@ -42,6 +42,10 @@
     text-align: center;
 }
 
+.flex__column{
+    display: flex;
+    flex-direction: column;
+}
 
 /* MODIFICADORES DE SLOGAN */
 
@@ -64,6 +68,7 @@
 .nav__lista {
     list-style: none;
     display: flex;
+    margin-bottom: 0;
 }
 
 .nav__item {
@@ -172,6 +177,14 @@
     font-size: 18px;
 }
 
+.delivery{
+    position: fixed !important;
+    bottom: 8%;
+    left: 90%;
+    background-color: darkgreen;
+    border: #000;
+}
+
 /*FOOTER*/
 
 .footer{
@@ -185,13 +198,14 @@
 .footer__texto {
     font-size: 18px;
     color: #cdd89f;
+    margin-bottom: 0;
 }
 
 .redes{
     display: flex;
     bottom: 2rem;
     right: 6rem;
-
+    margin-bottom: 0;
 
 }
 
@@ -202,7 +216,6 @@
     align-items: center;
     justify-content: space-around;
 }
-
 
 /* ---------------------- MENUS -------------------------*/
 
@@ -284,6 +297,33 @@
 
  }
 
+
+/*-----------------------------CONTACTANOS------------------------------*/
+
+.nombre-pag{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 40px;
+
+}
+
+.reserva{
+    padding-left: 2rem;
+    font-size: 32px;
+}
+
+.formulario{
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+.formulario__espacios{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: space-around;
+}
 
 /*--------- RESPONSIVE---------*/
 

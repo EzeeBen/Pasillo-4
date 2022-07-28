@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pasillo 4 | Contactanos</title>
-        <link rel="stylesheet" href="../estilos/estilos.css">
-        <link rel="shortcut icon" href="../Imagenes/4.jpg">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasillo 4 | Contactanos</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="shortcut icon" href="../Imagenes/4.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!-- CSS only -->
+</head>
+
 <body>
-    <header class="header"> <!-- Cabereca de la pag, con logo, menu, etc -->
-        
-        <div class="fullnav" >
+    <header class="header">
+        <!-- Cabereca de la pag, con logo, menu, etc -->
+
+        <div class="fullnav">
             <img src="../Imagenes/Logo-P4.png" alt="Logo de pasillo 4" class="iconDetails header__grid1">
             <h1 class="fuente-1 unbold slogan mayusculas header__grid2">Donde empieza la felicidad</h1>
             <a href="#menu" class="nav__menu nav__menu--oculto header__grid3">
                 <span class="jam jam-menu"></span>
             </a>
         </div>
-        
+
         <nav class="nav" id="menu">
-            <!-- Lista de enlaces para navegar dentro del sitio -->            
+            <!-- Lista de enlaces para navegar dentro del sitio -->
             <ul class="nav__lista">
                 <li class="nav__item">
                     <a href="../index.html" class="fuente-1">Inicio</a>
@@ -50,54 +55,76 @@
     <main class="header-sep">
         <section>
             <article>
-                <h1 class="fuente-1 title-font-size">Contactanos</h1>
-                <span class="fuente-2 title-font-size">Tomamos tu reserva!</span>
-                <section>
+                <h1 class="fuente-1 title-font-size nombre-pag">Contactanos</h1>
+                <span class="fuente-2 title-font-size reserva">Tomamos tu reserva!</span>
+                <section class="formulario">
+                    <form class="formulario__espacios" action="#">
+
+                        <label for="text" class="fuente-2"> Nombre:</label>
+                        <input type="text" placeholder="Nombre para la reserva" class="fuente-2">
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fuente-2">Decime tu email:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3 flex__column">
+                            <label for="exampleFormControlTextarea1" class="form-label fuente-2">Especificaciones para
+                                la mesa:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <label for="Mesa-para" class="fuente-2">Mesa para:</label>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Seleccione..</option>
+                                <option value="1">2</option>
+                                <option value="2">4</option>
+                                <option value="3">6</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label fuente-2" for="flexCheckIndeterminate">
+                                Pulse aqui si desea recibir información sobre nuestros descuentos!
+                            </label>
+                        </div>
+
+                        <input type="submit" value="HACER RESERVA" class="fuente-2">
+                        <input type="reset" value="BORRAR TODO" class="fuente-2">
+
+
+                    </form>
+
                     <article>
                         <form action="#">
-                            <label for="text" class="fuente-2"> Nombre:</label>
-                            <input type="text" placeholder="Nombre para la reserva" class="fuente-2"><br>
-                            <label for="email" class="fuente-2">Decime tu email:
-                                <input type="email" placeholder="aaa@gmail.com" name="email" class="fuente-2"><br>
-                            </label>
-                            <label for=" Especificaciones de la mesa" class="fuente-2"> Especificaciones de la mesa:<br>
-                                <textarea placeholder=" Especificaciones de la mesa" class="fuente-2"></textarea>
-                            </label> <br>
-                        
-                            <div>
-                                <label for="Mesa-para" class="fuente-2">Mesa para:</label>
-                                <select name="Mesa-para" id="Mesa-para">
-                                    <option value="Mesa-para" class="fuente-2">Seleccione..</option>
-                                    <option value="Mesa-para" class="fuente-2">2</option>
-                                    <option value="Mesa-para" class="fuente-2">4</option>
-                                    <option value="Mesa-para " class="fuente-2">6</option>
-                                </select>
-                            </div>
-                            <div class="fuente-2">Queres recibir info sobre nuestros descuentos?
-                            <input type="checkbox" name="acepta" value="1" class="fuente-2"></div>
-                            <input type="submit" value="HACER RESERVA" class="fuente-2">
-                            <input type="reset" value="BORRAR TODO" class="fuente-2">
+                            <br>
+
+                            
                         </form>
                     </article>
                 </section>
             </article>
         </section>
     </main>
-    <footer class="footer"> 
+    <footer class="footer">
         <p class="fuente-2 footer__texto">Derechos reservados Pasillo 4 </p>
         <img src="../Imagenes/Logo-P4.png" alt="logo de pasillo 4" width="100" height="100">
         <ul class="redes">
             <li>
-                <a href="https://www.instagram.com/ezeeds94/" target="_blank"><img src="../Imagenes/instagram.png" width="50" height="50"></a>
+                <a href="https://www.instagram.com/ezeeds94/" target="_blank"><img src="../Imagenes/instagram.png"
+                        width="50" height="50"></a>
             </li>
             <li>
-                <a href="https://www.facebook.com/ez3k13el/" target="_blank"><img src="../Imagenes/facebook.png" width="50" height="50"></a>
+                <a href="https://www.facebook.com/ez3k13el/" target="_blank"><img src="../Imagenes/facebook.png"
+                        width="50" height="50"></a>
             </li>
             <li>
-                <a href="https://twitter.com/ND_Pequi" target="_blank"><img src="../Imagenes/tw.png" width="50" height="50"></a>
+                <a href="https://twitter.com/ND_Pequi" target="_blank"><img src="../Imagenes/tw.png" width="50"
+                        height="50"></a>
             </li>
         </ul>
     </footer>
-    
+
 </body>
+
 </html>
