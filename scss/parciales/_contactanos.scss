@@ -1,0 +1,26 @@
+/*-----------------------------CONTACTANOS------------------------------*/
+
+.nombre-pag{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 40px;
+
+}
+
+.reserva{
+    padding-left: 2rem;
+    font-size: 32px;
+}
+
+.formulario{
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+.formulario__espacios{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    justify-content: space-around;
+}

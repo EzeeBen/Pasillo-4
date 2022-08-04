@@ -1,0 +1,56 @@
+* { /* Selector Universal */
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+/* MODIFICADORES DE TEXTO*/
+
+.mayusculas {
+    text-transform: uppercase;
+}
+
+.fuente-1{
+    text-decoration: none;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: #9b7408;
+    
+}
+.fuente-2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(45, 28%, 48%);
+}
+
+.title-font-size{
+    font-size: 24px;
+}
+
+.unbold{
+    font-weight: lighter;
+}
+
+.alineacion{
+    text-align: right;
+}
+
+.alineacion-c{
+    text-align: center;
+}
+
+.flex__column{
+    display: flex;
+    flex-direction: column;
+}
+/* MODIFICADORES DE SLOGAN */
+
+.slogan{
+    font-size: 56px;
+    text-align: center;
+    color: #fff;
+    animation-name: pasillo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+

@@ -1,0 +1,95 @@
+/* ---------------------- MAPAS -------------------------*/
+
+.mapas{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.mapas__titulo {
+    text-transform: capitalize;
+    
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.grid__mapas{
+    display: grid;
+    grid-template-areas:
+    "mapa1 mapa2"
+    "mapa3 mapa4";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.grid__mapas--1 {
+    grid-area: mapa1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #000 solid;
+    border-radius: 4%;
+    padding: 20px;
+    margin: 20px;
+    transition: all 2s;
+ }
+ .grid__mapas--2 {
+    grid-area: mapa2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #000 solid;
+    border-radius: 4%;
+    padding: 20px;
+    margin: 20px;
+    transition: all 2s;
+ }
+ .grid__mapas--3 {
+    grid-area: mapa3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #000 solid;
+    border-radius: 4%;
+    padding: 20px;
+    margin: 20px;
+    transition: all 2s;
+ }
+ .grid__mapas--4 {
+    grid-area: mapa4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #000 solid;
+    border-radius: 4%;
+    padding: 20px;
+    margin: 20px;
+    transition: all 2s;
+ }
+
+
+.grid__mapas--1:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 128, 0.808);
+    text-shadow: rgb(87, 87, 87) 2px 2px 8px;
+}
+
+.grid__mapas--2:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 128, 0.808);
+    text-shadow: rgb(87, 87, 87) 2px 2px 8px;
+}
+.grid__mapas--3:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 128, 0.808);
+    text-shadow: rgb(87, 87, 87) 2px 2px 8px;
+}
+.grid__mapas--4:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 128, 0.808);
+    text-shadow: rgb(87, 87, 87) 2px 2px 8px;
+}

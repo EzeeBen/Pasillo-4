@@ -1,4 +1,10 @@
-.eze{
-    color: antiquewhite;
-    text-shadow: none;
-}
+@import "./parciales/general";
+@import "./parciales/nav";
+@import "./parciales/index";
+@import "./parciales/footer";
+@import "./parciales/NL";
+@import "./parciales/bebidas";
+@import "./parciales/comida";
+@import "./parciales/contactanos";
+@import "./parciales/animaciones";
+@import "./parciales/media-querys";

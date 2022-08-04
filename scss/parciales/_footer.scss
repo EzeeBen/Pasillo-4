@@ -1,0 +1,31 @@
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    background-color: #000;
+}
+
+.footer__texto {
+    font-size: 18px;
+    color: #cdd89f;
+    margin-bottom: 0;
+}
+
+.redes{
+    display: flex;
+    bottom: 2rem;
+    right: 6rem;
+    margin-bottom: 0;
+
+}
+
+.redes a{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

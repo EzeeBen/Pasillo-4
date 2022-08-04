@@ -1,0 +1,57 @@
+/* ARRANCA EL MAIN*/
+
+/*VIDEO*/
+.video{
+    width: 100%;
+    height: 75%;
+}
+
+/* TARJETAS */
+
+.card {
+    background-color: transparent;
+    color: #000;
+    width: 100%; /* Unidades que suelo utiliza son porcentaje o pixeles */
+    height: 100%; /* Unidades que suelo utiliza son porcentaje o pixeles o Viewport */
+    padding: 1px 1px 1px 1px; /* Arriba, Derecha, Abajo y Izquierda */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: #000 1px solid;
+}
+
+.card__orden--inv{
+    order: -1;
+}
+
+.alineacion-img{
+    float: right;
+    display: flex;
+    width: 50%;
+    height: 80%;
+}
+
+.card__titulo {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    transition: transform 2s;
+}
+
+.card__titulo:hover{
+    transform: rotate(360deg);
+}
+
+.card__texto {
+    text-align: center;
+    font-size: 18px;
+}
+
+.delivery{
+    position: fixed !important;
+    bottom: 8%;
+    left: 90%;
+    background-color: darkgreen;
+    border: #000;
+}
