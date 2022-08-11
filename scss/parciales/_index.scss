@@ -1,5 +1,5 @@
 /* ARRANCA EL MAIN*/
-
+$sizeFont: 28px;
 /*VIDEO*/
 .video{
     width: 100%;
@@ -34,7 +34,7 @@
 
 .card__titulo {
     text-align: center;
-    font-size: 28px;
+    font-size: $sizeFont;
     text-transform: uppercase;
     transition: transform 2s;
 }
@@ -45,7 +45,7 @@
 
 .card__texto {
     text-align: center;
-    font-size: 18px;
+    font-size: ($sizeFont)-10px;
 }
 
 .delivery{

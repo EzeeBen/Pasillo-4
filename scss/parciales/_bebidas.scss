@@ -1,6 +1,8 @@
 /* ---------------------- MENUS -------------------------*/
+$anchoFoto: 200px;
+$altoFoto: 200px;
 
 .imagen__menu{
-    width: 200px;
-    height: 200px;
+    width: $anchoFoto;
+    height: $altoFoto;
 }
