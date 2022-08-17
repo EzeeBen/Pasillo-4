@@ -281,10 +281,22 @@
   width: 200px;
   height: 200px; }
 
+.acordetalle {
+  color: yellow;
+  background-color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
 /* ---------------------- MENUS -------------------------*/
 .imagen__menu {
   width: 200px;
   height: 200px; }
+
+.acordetalle {
+  color: yellow;
+  background-color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 /*-----------------------------CONTACTANOS------------------------------*/
 .nombre-pag {
