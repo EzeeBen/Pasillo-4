@@ -1,6 +1,6 @@
 /* ---------------------- MAPAS -------------------------*/
 
-.mapas{
+.mapas {
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -8,87 +8,102 @@
 
 .mapas__titulo {
     text-transform: capitalize;
-    
+
     font-size: 28px;
     letter-spacing: 2px;
 }
 
-.grid__mapas{
+.grid__mapas {
     display: grid;
     grid-template-areas:
-    "mapa1 mapa2"
-    "mapa3 mapa4";
+        "mapa1 mapa2"
+        "mapa3 mapa4";
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
+$mapas: (
+    fle: flex,
+    dire: column,
+    align: center,
+    just: center,
+    bord: #000 solid,
+    bordrr: 4%,
+    pad: 20px,
+    mar: 20px
+);
+
 .grid__mapas--1 {
     grid-area: mapa1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #000 solid;
-    border-radius: 4%;
-    padding: 20px;
-    margin: 20px;
+    display: map-get($mapas, fle);
+    flex-direction: map-get($mapas, dire);
+    align-items: map-get($mapas, align);
+    justify-content: map-get($mapas, just);
+    border: map-get($mapas, bord);
+    border-radius: map-get($mapas, bordrr);
+    padding: map-get($mapas, pad);
+    margin: map-get($mapas, mar);
     transition: all 2s;
- }
- .grid__mapas--2 {
+}
+
+.grid__mapas--2 {
     grid-area: mapa2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #000 solid;
-    border-radius: 4%;
-    padding: 20px;
-    margin: 20px;
+    display: map-get($mapas, fle);
+    flex-direction: map-get($mapas, dire);
+    align-items: map-get($mapas, align);
+    justify-content: map-get($mapas, just);
+    border: map-get($mapas, bord);
+    border-radius: map-get($mapas, bordrr);
+    padding: map-get($mapas, pad);
+    margin: map-get($mapas, mar);
     transition: all 2s;
- }
- .grid__mapas--3 {
+}
+
+.grid__mapas--3 {
     grid-area: mapa3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #000 solid;
-    border-radius: 4%;
-    padding: 20px;
-    margin: 20px;
+    display: map-get($mapas, fle);
+    flex-direction: map-get($mapas, dire);
+    align-items: map-get($mapas, align);
+    justify-content: map-get($mapas, just);
+    border: map-get($mapas, bord);
+    border-radius: map-get($mapas, bordrr);
+    padding: map-get($mapas, pad);
+    margin: map-get($mapas, mar);
     transition: all 2s;
- }
- .grid__mapas--4 {
+}
+
+.grid__mapas--4 {
     grid-area: mapa4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #000 solid;
-    border-radius: 4%;
-    padding: 20px;
-    margin: 20px;
+    display: map-get($mapas, fle);
+    flex-direction: map-get($mapas, dire);
+    align-items: map-get($mapas, align);
+    justify-content: map-get($mapas, just);
+    border: map-get($mapas, bord);
+    border-radius: map-get($mapas, bordrr);
+    padding: map-get($mapas, pad);
+    margin: map-get($mapas, mar);
     transition: all 2s;
- }
+}
 
-
-.grid__mapas--1:hover{
+.grid__mapas--1:hover {
     transform: scale(1.2);
     background-color: rgba(0, 0, 128, 0.808);
     text-shadow: rgb(87, 87, 87) 2px 2px 8px;
 }
 
-.grid__mapas--2:hover{
+.grid__mapas--2:hover {
     transform: scale(1.2);
     background-color: rgba(0, 0, 128, 0.808);
     text-shadow: rgb(87, 87, 87) 2px 2px 8px;
 }
-.grid__mapas--3:hover{
+
+.grid__mapas--3:hover {
     transform: scale(1.2);
     background-color: rgba(0, 0, 128, 0.808);
     text-shadow: rgb(87, 87, 87) 2px 2px 8px;
 }
-.grid__mapas--4:hover{
+
+.grid__mapas--4:hover {
     transform: scale(1.2);
     background-color: rgba(0, 0, 128, 0.808);
     text-shadow: rgb(87, 87, 87) 2px 2px 8px;

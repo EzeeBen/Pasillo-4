@@ -1,6 +1,5 @@
 /* ---------------------- MENUS -------------------------*/
-$anchoFoto: 200px;
-$altoFoto: 200px;
+@import "./variables.scss";
 
 .imagen__menu{
     width: $anchoFoto;
