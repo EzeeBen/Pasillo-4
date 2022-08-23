@@ -61,7 +61,8 @@
   margin-left: 16px;
   text-shadow: #585757 2px 2px 8px;
   padding: 14px;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Rubik Dirt', cursive; }
 
 .nav__item a:hover {
   color: #a82c2c; }
@@ -279,13 +280,18 @@
 /* ---------------------- MENUS -------------------------*/
 .imagen__menu {
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  gap: 2px; }
 
 .acordetalle {
   color: yellow;
   background-color: black;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.tablaitem {
+  gap: 200px;
+  padding: 200px; }
 
 /* ---------------------- MENUS -------------------------*/
 .imagen__menu {

@@ -4,6 +4,7 @@
 .imagen__menu{
     width: $anchoFoto;
     height: $altoFoto;
+    gap: 2px;
 }
 
 .acordetalle{
@@ -11,4 +12,8 @@
     background-color: black;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tablaitem{
+    gap: 200px;
+    padding: 200px;
 }
