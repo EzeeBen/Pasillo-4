@@ -7,7 +7,6 @@
 }
 
 /* TARJETAS */
-
 .card {
     background-color: transparent;
     color: #000;
@@ -49,9 +48,12 @@
 }
 
 .delivery{
+    list-style: none;
     position: fixed !important;
     bottom: 8%;
     left: 90%;
-    background-color: darkgreen;
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
     border: #000;
 }
